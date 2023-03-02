@@ -1,4 +1,4 @@
-package functionPackage;
+
 
 public class Partita {
     private Squadra squadraCasa;

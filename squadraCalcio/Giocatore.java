@@ -1,4 +1,4 @@
-package functionPackage;
+
 
 public class Giocatore {
     private String nome;
