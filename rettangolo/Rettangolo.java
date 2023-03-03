@@ -14,4 +14,3 @@ public class Rettangolo {
 		System.out.println("il perimentro è:" + perimetro);
 	}
 }
-yh
