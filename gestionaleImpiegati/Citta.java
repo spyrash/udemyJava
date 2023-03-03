@@ -16,4 +16,12 @@ public class Citta {
         return this.regione;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+            " nome='" + getNome() + "'" +
+            ", regione='" + getRegione() + "'" +
+            "}";
+    }
+
 }

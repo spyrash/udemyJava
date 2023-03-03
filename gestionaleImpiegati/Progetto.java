@@ -1,12 +1,13 @@
 package gestionaleImpiegati;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Progetto {
     private String nome;
     private Citta citta;
     private float budget;
-    private List<Impiegato> partecipanti;
+    private List<Impiegato> partecipanti = new ArrayList<Impiegato>();
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -42,6 +43,16 @@ public class Progetto {
 
     public void setBudget(float budget) {
         this.budget = budget;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " nome='" + getNome() + "'" +
+            ", citta='" + getCitta() + "'" +
+            ", budget='" + getBudget() + "'" +
+            ", partecipanti='" + getPartecipanti() + "'" +
+            "}";
     }
 
 }

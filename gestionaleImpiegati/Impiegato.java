@@ -1,7 +1,5 @@
 package gestionaleImpiegati;
 
-import java.util.List;
-
 public class Impiegato {
     private String codiceFiscale;
     private String nome;
@@ -31,6 +29,15 @@ public class Impiegato {
 
     public void setCognome(String cognome) {
         this.cognome = cognome;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " codiceFiscale='" + getCodiceFiscale() + "'" +
+            ", nome='" + getNome() + "'" +
+            ", cognome='" + getCognome() + "'" +
+            "}";
     }
 
 }

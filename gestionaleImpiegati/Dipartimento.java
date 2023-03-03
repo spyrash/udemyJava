@@ -1,5 +1,6 @@
 package gestionaleImpiegati;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Dipartimento {
@@ -7,7 +8,7 @@ public class Dipartimento {
     private int numeroTelefono;
     private Impiegato impiegatoDirigente;
     private Citta citta;
-    private List<Impiegato> impiegati;
+    private List<Impiegato> impiegati = new ArrayList<Impiegato>();
     
     
     public String getNome() {
@@ -48,6 +49,17 @@ public class Dipartimento {
 
     public void setImpiegati(List<Impiegato> impiegati) {
         this.impiegati = impiegati;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " nome='" + getNome() + "'" +
+            ", numeroTelefono='" + getNumeroTelefono() + "'" +
+            ", impiegatoDirigente='" + getImpiegatoDirigente() + "'" +
+            ", citta='" + getCitta() + "'" +
+            ", impiegati='" + getImpiegati() + "'" +
+            "}";
     }
 
 }
