@@ -6,8 +6,8 @@ public class Impiegato {
     private String codiceFiscale;
     private String nome;
     private String cognome;
-    private List<Dipartimento> dipartimenti;
-    private List<Progetto> progetti;
+   
+
 
     public String getCodiceFiscale() {
         return this.codiceFiscale;
@@ -31,22 +31,6 @@ public class Impiegato {
 
     public void setCognome(String cognome) {
         this.cognome = cognome;
-    }
-
-    public List<Dipartimento> getDipartimenti() {
-        return this.dipartimenti;
-    }
-
-    public void setDipartimenti(List<Dipartimento> dipartimenti) {
-        this.dipartimenti = dipartimenti;
-    }
-
-    public List<Progetto> getProgetti() {
-        return this.progetti;
-    }
-
-    public void setProgetti(List<Progetto> progetti) {
-        this.progetti = progetti;
     }
 
 }

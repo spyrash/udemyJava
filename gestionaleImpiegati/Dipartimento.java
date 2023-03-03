@@ -1,11 +1,15 @@
 package gestionaleImpiegati;
 
+import java.util.List;
+
 public class Dipartimento {
     private String nome;
     private int numeroTelefono;
     private Impiegato impiegatoDirigente;
     private Citta citta;
-
+    private List<Impiegato> impiegati;
+    
+    
     public String getNome() {
         return this.nome;
     }
@@ -36,6 +40,14 @@ public class Dipartimento {
 
     public void setCitta(Citta citta) {
         this.citta = citta;
+    }
+
+    public List<Impiegato> getImpiegati() {
+        return impiegati;
+    }
+
+    public void setImpiegati(List<Impiegato> impiegati) {
+        this.impiegati = impiegati;
     }
 
 }
